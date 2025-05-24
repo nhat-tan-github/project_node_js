@@ -28,9 +28,15 @@ db.connect((error) => {
     }
 })
 
+//Home
 app.get("/", (req, res) => {
     // res.send("<h1>Home Page</h1>");
     res.render("index");
+})
+
+//Register
+app.get("/register", (req, res) => {
+    res.render("register");
 })
 
 app.listen(5001, () => {
